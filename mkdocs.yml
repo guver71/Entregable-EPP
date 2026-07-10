@@ -1,0 +1,76 @@
+site_name: Sistema Inteligente de Control de Asistencia mediante Reconocimiento Facial
+site_description: Documentación de Gestión de Tecnologías de Información (GTI) — Diagnóstico, Business Case, Plan de Gestión, Procesos y Solución TIC
+site_author: Equipo de Proyecto — Gestión de Tecnologías de Información
+repo_url: https://github.com/tu-usuario/tu-repositorio
+repo_name: tu-usuario/tu-repositorio
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - navigation.sections
+    - navigation.indexes
+    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Inicio: index.md
+  - "Entregable 1 · Diagnóstico Organizacional": entregable1_diagnostico.md
+  - "Entregable 2 · Business Case": entregable2_business_case.md
+  - "Entregable 3 · Plan de Gestión (PMBOK)": entregable3_plan_gestion.md
+  - "Entregable 4 · Procesos AS-IS / TO-BE": entregable4_procesos.md
+  - "Entregable 5 · Solución TIC Integrada": entregable5_solucion_tic.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - attr_list
+  - md_in_html
+  - footnotes
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tu-usuario
+
+copyright: >
+  Proyecto Académico — Área de Gestión de Tecnologías de Información (GTI).
+  Documentación elaborada conforme a la guía PMBOK y estándares CDIO, ACM e ISO 27001.
